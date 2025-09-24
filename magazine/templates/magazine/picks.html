@@ -1,0 +1,26 @@
+{% extends 'magazine/base.html' %}
+{% block content %}
+<article class="article">
+    <h1 class="headline">{{ headline }}</h1>
+    <ul class="picks">
+        {% for item in picks %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    <p class="lead">Minimal outfit? Add these and you’re instantly Flamboyant.</p>
+    <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot green"></span>
+        <span class="dot navy"></span>
+    </div>
+    
+    <div class="lookbook">
+        <div class="look"></div>
+        <div class="look"></div>
+        <div class="look"></div>
+    </div>
+</article>
+{% endblock %}
+
+
+

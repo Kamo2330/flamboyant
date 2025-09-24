@@ -1,0 +1,16 @@
+{% extends 'magazine/base.html' %}
+{% block content %}
+<article class="article">
+    <h1 class="headline">{{ headline }}</h1>
+    {% if para1 %}<p class="lead">{{ para1 }}</p>{% endif %}
+    {% if para2 %}<p class="lead">{{ para2 }}</p>{% endif %}
+    <div class="lookbook">
+        <div class="look"></div>
+        <div class="look"></div>
+        <div class="look"></div>
+    </div>
+</article>
+{% endblock %}
+
+
+
